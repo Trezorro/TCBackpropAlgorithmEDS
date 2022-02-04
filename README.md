@@ -1,6 +1,10 @@
 # Transitive Closure Algorithm Visualized
 For the 2IMD10 (2021-GS2) Engineering Data Systems course.
 
+https://user-images.githubusercontent.com/19216539/152614331-7f51ae26-f500-40ba-a13f-a78ed9a9f676.mp4
+
+_The transitive closure is first solved from the perspective of node 0. A later query on node 1 uses the cached results._
+
 ## Environment Setup
 With Conda (miniconda) installed, in your shell, run:
 `conda env create -f graph_env.yml`
@@ -24,5 +28,10 @@ def explore(s, root):
             C[s,t] = 1 # and add the target itself to the cover
             N[s] = ~C[s] & (N[s] | N[t])
 ```
+## Larger example
+
+
+https://user-images.githubusercontent.com/19216539/152614318-811568da-9d9f-4e0f-83a4-2a23cfced47a.mp4
+
 
 
